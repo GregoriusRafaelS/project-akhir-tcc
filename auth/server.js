@@ -13,7 +13,7 @@ app.use(express.json());
 
 app.use('/api/auth', require('./routes/auth'));
 
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 8080;
 
 sequelize.sync().then(() => {
   app.listen(PORT, () => {

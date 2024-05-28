@@ -1,16 +1,14 @@
-// frontend/src/components/Home.js
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Home = () => {
+function Home() {
   return (
     <div>
-      <h1>Welcome to the App</h1>
-      <Link to="/login">Login</Link>
+      <h1>Welcome to Our App</h1>
       <Link to="/register">Register</Link>
-      <Link to="/data">View Data</Link>
+      <Link to="/login">Login</Link>
     </div>
   );
-};
+}
 
 export default Home;

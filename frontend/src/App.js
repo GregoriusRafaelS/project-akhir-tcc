@@ -1,20 +1,19 @@
-// frontend/src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './components/Home';
-import Login from './components/Login';
 import Register from './components/Register';
-import DataList from './components/DataList';
+import Login from './components/Login';
+import Users from './components/Users';
 
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div>
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/login" component={Login} />
           <Route path="/register" component={Register} />
-          <Route path="/data" component={DataList} />
+          <Route path="/login" component={Login} />
+          <Route path="/users" component={Users} />
         </Switch>
       </div>
     </Router>
